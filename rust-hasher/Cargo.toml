@@ -1,0 +1,13 @@
+[package]
+name = "my_project"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+argon2 = "0.5"
+libc = "0.2.183"
+rand = "0.10"
+rand_core = { version = "0.10.0", features = ["getrandom"] }
